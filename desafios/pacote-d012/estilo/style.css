@@ -8,7 +8,6 @@
     --font2: 'Passion One', cursive;
     --font3: 'Sriracha', cursive;
 }   
-
 {
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgrey;
+    background-color: #f0f0f0;
     font-family: var(--font1);
 }
 
@@ -58,21 +57,38 @@ section {
     font-family: var(--font3);
     font-size: 3.5vw;
 }
+section > p {
+    padding-bottom: 1em;
+}
 
 section.normal {
     background-color: white;
     color: black;
+
 }
 
 section.imagem {
     background-color: #4d4b4b;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px #464545;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: #2f2e2e;
+    background-color: #2f2e2ec3;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(' ../imagens/background001.jpg');
+    background-position: right center;
+}
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: left center;
 }
 
 footer {
