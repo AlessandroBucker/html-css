@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte para o corpo do documento */
+        }
+        table {
+            width: 400px; /* Define a largura da tabela */
+            height: 400px; /* Define a altura da tabela */
+            border-collapse: collapse;/* Remove os espaços entre as bordas das células */
+        }
+        td{
+            border: 1px solid black;/* Borda de 1 pixel sólida e preta */
+            padding: 8px;   /* Espaçamento interno das células */
+            text-align: center; /* Alinhamento horizontal */
+            vertical-align: middle; /* Alinhamento vertical */
+           }
+
+        .numero { /* Classe para os números */
+            font-size: 24px; /* Define o tamanho da fonte para os números */
+            font-weight: bold; /* Deixa os números em negrito */}
+
+    </style>
+</head>
+<body>
+    <h1>Minha Primeira Tabela</h1> <!-- Criando uma tabela simples com HTML
+    HIERARQUIA DE TABELAS(SIMPLES)
+    TABLE         = tabela
+    TABLE ROWS    = linhas da tabela
+    TABLE HEADERS = cabeçalhos da tabela 
+    TABLE DATA    = dados da tabela
+   -->
+    <table>
+        <tr> <!--CABEÇALHO -->
+            <th>Nome</th><!--Primeira linha da tabela cabeçalho *****<th>******-->
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+
+        <tr> <!--PRIMEIRA LINHA DE DADOS -->
+            <td class="numero">Ana
+            <td class="numero">25
+            <td>São Paulo
+        </tr>
+        <tr><!--SEGUNDA LINHA DE DADOS -->
+            <td class="numero">Bruno
+            <td class="numero">30
+            <td>Rio de Janeiro
+        </tr>
+        <tr> <!--TERCEIRA LINHA DE DADOS -->    
+            <td>Carla
+            <td class="numero">28
+            <td>Belo Horizonte
+        </tr>
+    
+</body>
+</html>
