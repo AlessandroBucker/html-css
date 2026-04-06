@@ -13,16 +13,35 @@
             width: 500px;
             height:30px;
             border-collapse: collapse;
+            position: relative;
         }
-        td, th{
+        td{
             border: 1px solid black;
             padding: 5px;
             text-align: left;
             vertical-align: middle;
         }
+        th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
         thead, tfoot{
-            background-color: #5c5656;
+            background-color: #3c3939;
             color: white;
+            text-align: center;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #3c3939;
+        }
+        tbody tr:nth-child(even){
+            background-color: #c8c5c5;
+        }
+        tbody tr:nth-child(odd){
+            background-color: #e8e5e5;
         }
         td.num{
             text-align: right;
@@ -30,7 +49,9 @@
         caption{
             font-size: 1.5em;
             font-weight: bold;
-            margin-bottom: 10px;
+
+            background-color: #c8c5c5;
+            padding: 10px;
         }
     </style>
 </head>
@@ -48,12 +69,20 @@
     <table>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
-            
-
         </thead>
+                <tfoot>
+            <tr>
+                <td scope="row">Total de habitantes</td>
+                <td class="num">210000000</td>
+            </tr>
+
+        </tfoot>
+        <caption>
+            POPULAÇÃO DAS UNIDADES FEDERATIVAS DO BRASIL
+        </caption>
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -139,22 +168,68 @@
                 <td>Sergipe</td>
                 <td class="num">2000000</td>    
             </tr>
-
-    
-        </tbody>
-            
-        </tbody>>
-        <tfoot>
             <tr>
-                <td>Total de habitantes</td>
-                <td class="num">210000000</td>
+                <td>Maranhão</td>
+                <td class="num">7000000</td>
             </tr>
-
-        </tfoot>
-        <caption>
-            POPULAÇÃO DAS UNIDADES FEDERATIVAS DO BRASIL
-        </caption>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4000000</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3000000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3000000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2000000</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">2000000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">600000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">900000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3000000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2000000</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7000000</td>
+            </tr>
+        </tbody>
 
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae ut temporibus vero doloremque enim, ab eum quibusdam placeat est debitis recusandae at accusamus voluptates consequatur nobis iure explicabo. Quis, pariatur.</p>
+                                            
 </body>
 </html>
