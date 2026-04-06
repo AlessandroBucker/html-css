@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABELAS GRANDES</title>
+    
+    <style>
+        body{
+            font-family: Arial, Arial, Helvetica, sans-serif, sans-serif;
+        }
+        table{
+            width: 500px;
+            height:30px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+            vertical-align: middle;
+        }
+        thead, tfoot{
+            background-color: #5c5656;
+            color: white;
+        }
+        td.num{
+            text-align: right;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Minha Tabela Grande</h1>
+    <!--Anatomia para tabelas grandes
+    TABLE 
+        HEAD, BODY, FOOT
+        tr = linhas da tabela
+        td = dados da tabela
+        th = cabeçalhos da tabela
+         -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+            
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45000000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21000000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17000000</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">15000000</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11000000</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10000000</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7000000</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7000000</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3000000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9000000</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9000000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4000000</td>
+            </tr>
+            <tr>
+                <td>Para</td>
+                <td class="num">8000000</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1500000</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3000000</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">2000000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">800000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">600000</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">900000</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3000000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2000000</td>    
+            </tr>
+
+    
+        </tbody>
+            
+        </tbody>>
+        <tfoot>
+            <tr>
+                <td>Total de habitantes</td>
+                <td class="num">210000000</td>
+            </tr>
+
+        </tfoot>
+        <caption>
+            POPULAÇÃO DAS UNIDADES FEDERATIVAS DO BRASIL
+        </caption>
+
+    </table>
+</body>
+</html>
