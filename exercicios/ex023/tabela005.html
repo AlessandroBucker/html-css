@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
-    <title>Tabela</title>
+    <title>Execício de Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        tr.destaque {
+            background-color: #54e75e;
+        }
+            .kgrupo {
+                width: 30%;
+                background-color: blue;
+            }
+
+    </style>
 </head>
 <body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="knome">
+            <col class="kgrupo" span="2">
+            <col class="kprofissao">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>25</td>
+            <td>Feminino</td>
+            <td>Engenheira</td>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>30</td>
+            <td>Masculino</td>
+            <td>Médico</td>
+        </tr>
+        <tr class="destaque">
+            <td>Maria Oliveira</td>
+            <td>28</td>
+            <td>Feminino</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Carlos Santos</td>
+            <td>35</td>
+            <td>Masculino</td>
+            <td>Advogado</td>
+        </tr>
+        <tr>
+            <td>Luciana Costa</td>
+            <td>22</td>
+            <td>Feminino</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Pedro Almeida</td>
+            <td>27</td>
+            <td>Masculino</td>
+            <td>Programador</td>
+        </tr>
+
+    </table>
     
 </body>
 </html>
