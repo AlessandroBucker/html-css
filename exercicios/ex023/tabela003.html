@@ -6,16 +6,19 @@
     <title>Tabela 003</title>
     <style>
         table{
-            width: 500px;
+            font: 1em arial, helvetica, sans-serif;
+            width: 300px;
             height:30px;
             border-collapse: collapse;
             position: relative;
+            
         }
         td{
             border: 1px solid black;
             padding: 5px;
             text-align: left;
             vertical-align: middle;
+            text-align: center;
         }
     </style>
 </head>
@@ -24,21 +27,21 @@
         <h1>Mesclagem de Células</h1>
         <tr>
             <td>A</td>
-            <td>B</td>
-            <td>C</td>
+            <td colspan="2">B</td>
+            
         </tr>
         <tr>
-            <td>D</td>
-            <td>E</td>
+            <td rowspan="3">D</td>
+            <td rowspan="1">E</td>
             <td>F</td>
         </tr>
         <tr>
-            <td>G</td>
+            
             <td>H</td>
             <td>I</td>
         </tr>
         <tr>
-            <td>J</td>
+            
             <td>L</td>
             <td>M</td>
         </tr>
